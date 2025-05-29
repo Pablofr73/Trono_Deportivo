@@ -1,0 +1,40 @@
+/* Estilos generales */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Cuadrícula de deportes */
+.deportes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de deporte */
+.deporte-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.deporte-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.deporte-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
